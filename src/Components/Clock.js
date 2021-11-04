@@ -15,11 +15,11 @@ export default class Clock extends Component {
   }
 
   render() {
+    const { date } = this.state;
     return (
       <div>
         <h1>
-          The Courrent Time is{" "}
-          <span>{this.state.date.toLocaleTimeString()}</span>
+          The Courrent Time is <span>{date.toLocaleTimeString()}</span>
         </h1>
       </div>
     );
